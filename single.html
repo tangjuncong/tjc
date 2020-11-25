@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>商品详情</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css">
+  <!--图标插件-->
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!--幻灯片-->
+  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+  <!--查询盒子-->
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+<body class="body-wrapper">
+
+<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<nav class="navbar navbar-expand-lg navbar-light navigation">
+						<a class="navbar-brand" href="index.html">
+							<img src="images/logo.png" alt="">
+						</a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav ml-auto main-nav ">
+								<li class="nav-item active">
+									<a class="nav-link" href="index.html">首页</a>
+								</li>
+								<li class="nav-item dropdown dropdown-slide">
+									<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">名人堂<span><i class="fa fa-angle-down"></i></span>
+									</a>
+	
+									<!-- Dropdown list -->
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="dashboard.html">某某某</a>
+										<a class="dropdown-item" href="dashboard-my-ads.html">某某某</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown dropdown-slide">
+									<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										收藏<span><i class="fa fa-angle-down"></i></span>
+									</a>
+									<!-- Dropdown list -->
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="">热门收藏</a>
+										<a class="dropdown-item" href="">我的收藏</a>
+									</div>
+								</li>
+								<li class="nav-item dropdown dropdown-slide">
+									<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										分类<span><i class="fa fa-angle-down"></i></span>
+									</a>
+									<!-- Dropdown list -->
+									<div class="dropdown-menu">
+										<a class="dropdown-item" href="ad-list-view.html">书籍分类</a>
+										<a class="dropdown-item" href="ad-list-view.html">作者分类</a>
+									</div>
+								</li>
+							</ul>
+							<ul class="navbar-nav ml-auto mt-10">
+								<li class="nav-item">
+									<a class="nav-link login-button" href="login.html">登陆</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link login-button" href="register.html">注册</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-white add-button" href="ad-listing.html"><i class="fa fa-plus-circle"></i>上传</a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+</section>
+
+<section class="section bg-gray">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<!-- Left sidebar -->
+			<div class="col-md-8">
+				<div class="product-details">
+					<h1 class="product-title">《我为什么一直在掉发》</h1>
+					<div class="product-meta">
+						<ul class="list-inline">
+							<li class="list-inline-item"><i class="fa fa-user-o"></i>作者：<a href="">李胜圣</a></li>
+							<li class="list-inline-item"><i class="fa fa-folder-open-o"></i>分类：<a href="">故事</a></li>
+							<li class="list-inline-item"><i class="fa fa-location-arrow"></i>指导价：<a href="">$12</a></li>
+						</ul>
+					</div>
+
+					<!-- product slider -->
+					<div class="product-slider">
+						<div class="product-slider-item my-4" data-image="">
+							<img class="img-fluid w-100" src="images/products/products-1.jpg" alt="product-img">
+						</div>
+						<div class="product-slider-item my-4" data-image="images/products/products-2.jpg">
+							<img class="d-block img-fluid w-100" src="images/products/products-2.jpg" alt="Second slide">
+						</div>
+						<div class="product-slider-item my-4" data-image="images/products/products-3.jpg">
+							<img class="d-block img-fluid w-100" src="images/products/products-3.jpg" alt="Third slide">
+						</div>
+						<div class="product-slider-item my-4" data-image="images/products/products-1.jpg">
+							<img class="d-block img-fluid w-100" src="images/products/products-1.jpg" alt="Third slide">
+						</div>
+						<div class="product-slider-item my-4" data-image="images/products/products-2.jpg">
+							<img class="d-block img-fluid w-100" src="images/products/products-2.jpg" alt="Third slide">
+						</div>
+					</div>
+					<!-- product slider -->
+
+					<div class="content mt-5 pt-5">
+						<ul class="nav nav-pills  justify-content-center" id="pills-tab" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
+								 aria-selected="true">商品介绍</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
+								 aria-selected="false">商品数据</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
+								 aria-selected="false">买家评价</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="pills-tabContent">
+							<div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+								<h3 class="tab-title">商品介绍</h3>
+								<p>XXXXXXXXXXX</p>
+
+								<iframe width="100%" height="400" src=""
+								 frameborder="0" allowfullscreen></iframe>
+								<p></p>
+								<p>xxxxxxxxxxxxxxxxx</p>
+
+							</div>
+							<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+								<h3 class="tab-title">商品数据</h3>
+								<table class="table table-bordered product-table">
+									<tbody>
+										<tr>
+											<td>销售价格</td>
+											<td>$12</td>
+										</tr>
+										<tr>
+											<td>上架日期</td>
+											<td>10/26</td>
+										</tr>
+										<tr>
+											<td>作者</td>
+											<td>李胜圣</td>
+										</tr>
+										<tr>
+											<td>纸质</td>
+											<td>新</td>
+										</tr>
+										<tr>
+											<td>种类</td>
+											<td>故事</td>
+										</tr>
+										<tr>
+											<td>年份</td>
+											<td>2017</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+								<h3 class="tab-title">商品评价</h3>
+								<div class="product-review">
+									<div class="media">
+
+										<div class="media-body">
+											<!-- Ratings -->
+											<div class="ratings">
+												<ul class="list-inline">
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+													<li class="list-inline-item">
+														<i class="fa fa-star"></i>
+													</li>
+												</ul>
+											</div>
+											<div class="name">
+												<h5>黄华雄</h5>
+											</div>
+											<div class="date">
+												<p>2020/10/28</p>
+											</div>
+											<div class="review-comment">
+												<p>
+													好！
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="review-submission">
+										<h3 class="tab-title">买家评价</h3>
+										<!-- Rate -->
+										<div class="rate">
+											<div class="starrr"></div>
+										</div>
+										<div class="review-submit">
+											<form action="#" class="row">
+												<div class="col-lg-6">
+													<input type="text" name="name" id="name" class="form-control" placeholder="名字">
+												</div>
+												<div class="col-lg-6">
+													<input type="email" name="email" id="email" class="form-control" placeholder="邮箱">
+												</div>
+												<div class="col-12">
+													<textarea name="review" id="review" rows="10" class="form-control" placeholder="评价"></textarea>
+												</div>
+												<div class="col-12">
+													<button type="submit" class="btn btn-main">提交</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="sidebar">
+					<div class="widget price text-center">
+						<h4>Price</h4>
+						<p>$12</p>
+					</div>
+					<!-- User Profile widget -->
+					<div class="widget user text-center">
+						<img class="rounded-circle img-fluid mb-5 px-5" src="" alt="">
+						<h4><a href="">李胜圣</a></h4>
+						<p class="member-time">1999/04/01</p>
+						<a href="">中国著名文学家</a>
+						<ul class="list-inline mt-20">
+							<li class="list-inline-item"><a href="" class="btn btn-contact d-inline-block  btn-primary px-lg-5 my-1 px-md-3">点击了解一下</a></li>
+						</ul>
+					</div>
+					<!-- Map Widget -->
+					<div class="widget map">
+						<div class="map">
+							<div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758">
+								<div style="text-align:center">
+									<a href="" class="btn btn-transparent-white">加入购物车</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Rate Widget -->
+					<div class="widget rate">
+						<!-- Heading -->
+						<h5 class="widget-header text-center">你怎么评价这本书</h5>
+						<!-- Rate -->
+						<div class="starrr"></div>
+					</div>
+					<!-- Safety tips widget -->
+					<div class="widget disclaimer">
+						<h5 class="widget-header">作者推荐</h5>
+						<ul>
+							<li>《活着》</li>
+							<li>《活着》</li>
+							<li>《活着》</li>
+							<li>《活着》</li>
+						</ul>
+					</div>
+					<!-- Coupon Widget -->
+					<div class="widget coupon text-center">
+						<!-- Coupon description -->
+						<p>喜欢就分享给你的朋友们吧
+						</p>
+						<!-- Submii button -->
+						<a href="" class="btn btn-transparent-white">立即分享</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/popper.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+  <!-- tether js -->
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

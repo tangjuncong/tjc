@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- SITE TITTLE -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>黄金屋书城</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-slider.css">
+  <!--图标插件-->
+  <link href="plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!--幻灯片-->
+  <link href="plugins/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="plugins/slick-carousel/slick/slick-theme.css" rel="stylesheet">
+  <!--查询盒子-->
+  <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
+  <link href="plugins/jquery-nice-select/css/nice-select.css" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="body-wrapper">
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<nav class="navbar navbar-expand-lg navbar-light navigation">
+					<a class="navbar-brand" href="index.html">
+						<img src="images/logo.png" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav ml-auto main-nav ">
+							<li class="nav-item active">
+								<a class="nav-link" href="index.html">首页</a>
+							</li>
+							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="">名人堂<span><i class="fa fa-angle-down"></i></span>
+								</a>
+
+								<!-- Dropdown list -->
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="dashboard.html">某某某</a>
+									<a class="dropdown-item" href="dashboard-my-ads.html">某某某</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									收藏<span><i class="fa fa-angle-down"></i></span>
+								</a>
+								<!-- Dropdown list -->
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="bookstore.html">热门收藏</a>
+									<a class="dropdown-item" href="bookstore.html">我的收藏</a>
+								</div>
+							</li>
+							<li class="nav-item dropdown dropdown-slide">
+								<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									分类<span><i class="fa fa-angle-down"></i></span>
+								</a>
+								<!-- Dropdown list -->
+								<div class="dropdown-menu">
+									<a class="dropdown-item" href="ad-list-view.html">书籍分类</a>
+									<a class="dropdown-item" href="ad-list-view.html">作者分类</a>
+								</div>
+							</li>
+						</ul>
+						<ul class="navbar-nav ml-auto mt-10">
+							<li class="nav-item">
+								<a class="nav-link login-button" href="login.html">登陆</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link login-button" href="register.html">注册</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-white add-button" href="ad-listing.html"><i class="fa fa-plus-circle"></i>上传</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="hero-area bg-1 text-center overly">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- Header Content -->
+				<div class="content-block">
+					<h1>欢迎来到黄金屋书城</h1>
+					<p>在这里<br>你可以畅游书海</p>
+					<div class="short-popular-category-list text-center">
+						<h2>热门类型</h2>
+						<ul class="list-inline">
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-bed"></i>哲学</a></li>
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-grav"></i>文学</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-car"></i>经济</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-cutlery"></i>资讯</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="category.html"><i class="fa fa-coffee"></i>生活</a>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+				<!-- Advance Search -->
+				<div class="advance-search">
+						<div class="container">
+							<div class="row justify-content-center">
+								<div class="col-lg-12 col-md-12 align-content-center">
+										<form>
+											<div class="form-row">
+												<div class="form-group col-md-4">
+													<input type="text" class="form-control my-2 my-lg-1" id="inputtext4" placeholder="书名,作者名...">
+												</div>
+												<div class="form-group col-md-3">
+													<select class="w-100 form-control mt-lg-1 mt-md-2">
+														<option>类型</option>
+														<option value="1">教育</option>
+														<option value="2">体育</option>
+														<option value="4">传媒</option>
+													</select>
+												</div>
+												<div class="form-group col-md-3">
+													<input type="text" class="form-control my-2 my-lg-1" id="inputLocation4" placeholder="编号">
+												</div>
+												<div class="form-group col-md-2 align-self-center">
+													<button type="submit" class="btn btn-primary">查询</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<section class="popular-deals section bg-gray">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-title">
+					<h2>热门推荐</h2>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<!-- offer 01 -->
+			<div class="col-lg-12">
+				<div class="trending-ads-slide">
+					<div class="col-sm-12 col-lg-4">
+						<!-- product card -->
+<div class="product-item bg-light">
+	<div class="card">
+		<div class="thumb-content">
+			<!-- <div class="price">$200</div> -->
+			<a href="single.html">
+				<img class="card-img-top img-fluid" src="images/book2.png" alt="Card image cap">
+			</a>
+		</div>
+		<div class="card-body">
+		    <h4 class="card-title"><a href="single.html">书名</a></h4>
+		    <ul class="list-inline product-meta">
+		    	<li class="list-inline-item">
+		    		<a href="single.html"><i class="fa fa-folder-open-o"></i>文件类</a>
+		    	</li>
+		    	<li class="list-inline-item">
+		    		<a href="#"><i class="fa fa-calendar"></i>26th December</a>
+		    	</li>
+		    </ul>
+		    <p class="card-text">书籍简介</p>
+		    <div class="product-ratings">
+		    	<ul class="list-inline">
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+
+					</div>
+					<div class="col-sm-12 col-lg-4">
+						<!-- product card -->
+<div class="product-item bg-light">
+	<div class="card">
+		<div class="thumb-content">
+			<!-- <div class="price">$200</div> -->
+			<a href="single.html">
+				<img class="card-img-top img-fluid" src="images/book3.png" alt="Card image cap">
+			</a>
+		</div>
+		<div class="card-body">
+		    <h4 class="card-title"><a href="single.html">书名</a></h4>
+		    <ul class="list-inline product-meta">
+		    	<li class="list-inline-item">
+		    		<a href="single.html"><i class="fa fa-folder-open-o"></i>文件类</a>
+		    	</li>
+		    	<li class="list-inline-item">
+		    		<a href="#"><i class="fa fa-calendar"></i>26th December</a>
+		    	</li>
+		    </ul>
+		    <p class="card-text">书籍简介</p>
+		    <div class="product-ratings">
+		    	<ul class="list-inline">
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+
+					</div>
+					<div class="col-sm-12 col-lg-4">
+						<!-- product card -->
+<div class="product-item bg-light">
+	<div class="card">
+		<div class="thumb-content">
+			<!-- <div class="price">$200</div> -->
+			<a href="single.html">
+				<img class="card-img-top img-fluid" src="images/book4.png" alt="Card image cap">
+			</a>
+		</div>
+		<div class="card-body">
+		    <h4 class="card-title"><a href="single.html">书名</a></h4>
+		    <ul class="list-inline product-meta">
+		    	<li class="list-inline-item">
+		    		<a href="single.html"><i class="fa fa-folder-open-o"></i>文件类</a>
+		    	</li>
+		    	<li class="list-inline-item">
+		    		<a href="#"><i class="fa fa-calendar"></i>26th December</a>
+		    	</li>
+		    </ul>
+		    <p class="card-text">书籍简介</p>
+		    <div class="product-ratings">
+		    	<ul class="list-inline">
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+
+					</div>
+					<div class="col-sm-12 col-lg-4">
+						<!-- product card -->
+<div class="product-item bg-light">
+	<div class="card">
+		<div class="thumb-content">
+			<!-- <div class="price">$200</div> -->
+			<a href="single.html">
+				<img class="card-img-top img-fluid" src="images/book7.png" alt="Card image cap">
+			</a>
+		</div>
+		<div class="card-body">
+		    <h4 class="card-title"><a href="single.html">书名</a></h4>
+		    <ul class="list-inline product-meta">
+		    	<li class="list-inline-item">
+		    		<a href="single.html"><i class="fa fa-folder-open-o"></i>文件名</a>
+		    	</li>
+		    	<li class="list-inline-item">
+		    		<a href="#"><i class="fa fa-calendar"></i>26th December</a>
+		    	</li>
+		    </ul>
+		    <p class="card-text">书籍简介</p>
+		    <div class="product-ratings">
+		    	<ul class="list-inline">
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item selected"><i class="fa fa-star"></i></li>
+		    		<li class="list-inline-item"><i class="fa fa-star"></i></li>
+		    	</ul>
+		    </div>
+		</div>
+	</div>
+</div>
+
+
+
+					</div>
+				</div>
+			</div>
+			
+			
+		</div>
+	</div>
+</section>
+
+<section class=" section">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<!-- Section title -->
+				<div class="section-title">
+					<h2>所有分类</h2>
+					<p>You can choose from here</p>
+				</div>
+				<div class="row">
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-laptop icon-bg-1"></i> 
+								<h4>文学</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">星是夜空的眼 <span>9.1</span></a></li>
+								<li><a href="category.html">后来我们都哭了<span>8.5</span></a></li>
+								<li><a href="category.html">归鸟不知春晓<span>8.3</span></a></li>
+								<li><a href="category.html">月都花落，沧海花开 <span>9.1</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-apple icon-bg-2"></i> 
+								<h4>动漫</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">卡通先锋 <span>7.7</span></a></li>
+								<li><a href="category.html">新干线 <span>8.0</span></a></li>
+								<li><a href="category.html">动漫迷城  <span>7.6</span></a></li>
+								<li><a href="category.html">动漫新势力<span>43</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-home icon-bg-3"></i> 
+								<h4>娱乐时尚</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">与我们青春有关的记忆 <span>9.3</span></a></li>
+								<li><a href="category.html">人行道王国<span>8.8</span></a></li>
+								<li><a href="category.html">人类群星闪耀式<span>8.3</span></a></li>
+								<li><a href="category.html">局外人<span>8.4</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-shopping-basket icon-bg-4"></i> 
+								<h4>旅游</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">在路上<span>9.2</span></a></li>
+								<li><a href="category.html">达摩流浪者<span>8.9</span></a></li>
+								<li><a href="category.html">孤独星球<span>7.9</span></a></li>
+								<li><a href="category.html">迟到的间隔年<span>8.3</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-briefcase icon-bg-5"></i> 
+								<h4>言情</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">我就是这般女子<span>8.1</span></a></li>
+								<li><a href="category.html">她的英雄<span>7.7</span></a></li>
+								<li><a href="category.html">天下无双<span>7.5</span></a></li>
+								<li><a href="category.html">迟来深情<span>8.4</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-car icon-bg-6"></i> 
+								<h4>人生励志</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">阿甘正传<span>9.7</span></a></li>
+								<li><a href="category.html">名人传<span>9.5</span></a></li>
+								<li><a href="category.html">不抱怨的世界<span>8.9</span></a></li>
+								<li><a href="category.html">唤醒心中的巨人<span>9.6</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							<div class="header">
+								<i class="fa fa-paw icon-bg-7"></i> 
+								<h4>经济</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">国富论<span>8.8</span></a></li>
+								<li><a href="category.html">博弈圣经<span>9.3</span></a></li>
+								<li><a href="category.html">资本论<span>9.2</span></a></li>
+								<li><a href="category.html">纯粹经济学要义<span>9.1</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					<!-- Category list -->
+					<div class="col-lg-3 offset-lg-0 col-md-5 offset-md-1 col-sm-6 col-6">
+						<div class="category-block">
+							
+							<div class="header">
+								<i class="fa fa-laptop icon-bg-8"></i> 
+								<h4>军事</h4>
+							</div>
+							<ul class="category-list" >
+								<li><a href="category.html">致胜的科学<span>9.3</span></a></li>
+								<li><a href="category.html">大战略<span>8.6</span></a></li>
+								<li><a href="category.html">制空权<span>8.3</span></a></li>
+								<li><a href="category.html">战争艺术概论<span>8.9</span></a></li>
+							</ul>
+						</div>
+					</div> <!-- /Category List -->
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<section class="call-to-action overly bg-3 section-sm">
+	<!-- Container Start -->
+	<div class="container">
+		<div class="row justify-content-md-center text-center">
+			<div class="col-md-8">
+				<div class="content-holder">
+					<h2>欢迎你的加入</h2>
+					<ul class="list-inline mt-30">
+						<li class="list-inline-item"><a class="btn btn-main" href="ad-listing.html">分享</a></li>
+						<li class="list-inline-item"><a class="btn btn-secondary" href="category.html">了解一下</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Container End -->
+</section>
+
+<footer class="footer-bottom">
+	<!-- Container Start -->
+	<div class="container">
+	  <div class="row">
+		<div class="col-sm-6 col-12">
+		  <!-- Copyright -->
+		  <div class="copyright">
+			<p>Copyright © <script>
+				var CurrentYear = new Date().getFullYear()
+				document.write(CurrentYear)
+			  </script>. All Rights Reserved, theme by team members</p>
+		  </div>
+		</div>
+		<div class="col-sm-6 col-12">
+		  <!-- Social Icons -->
+		  <ul class="social-media-icons text-right">
+			<li><a class="fa fa-facebook" href="" target="_blank"></a></li>
+			<li><a class="fa fa-twitter" href="" target="_blank"></a></li>
+			<li><a class="fa fa-pinterest-p" href="" target="_blank"></a></li>
+			<li><a class="fa fa-vimeo" href=""></a></li>
+		  </ul>
+		</div>
+	  </div>
+	</div>
+	<!-- Container End -->
+	<!-- To Top -->
+	<div class="top-to">
+	  <a id="top" class="" href="#"><i class="fa fa-angle-up"></i></a>
+	</div>
+  </footer>
+<!-- JAVASCRIPTS -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<script src="plugins/bootstrap/js/popper.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap.min.js"></script>
+<script src="plugins/bootstrap/js/bootstrap-slider.js"></script>
+  <!-- tether js -->
+<script src="plugins/slick-carousel/slick/slick.min.js"></script>
+<script src="plugins/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+<script src="plugins/fancybox/jquery.fancybox.pack.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
+
+
+
